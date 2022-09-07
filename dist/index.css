@@ -1,0 +1,209 @@
+/* add css module styles here (optional) */
+
+._styles-module__test__2SPBi {
+  margin: 2em;
+  padding: 0.5em;
+  border: 2px solid #000;
+  font-size: 2em;
+  text-align: center;
+}
+
+@-webkit-keyframes _styles-module__showHideVertical__UAdhu {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+    max-height: 0px;
+  }
+  20%,
+  80% {
+    opacity: 1;
+    transform: translateY(0);
+    max-height: 100px;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+    max-height: 0px;
+  }
+}
+
+@keyframes _styles-module__showHideVertical__UAdhu {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+    max-height: 0px;
+  }
+  20%,
+  80% {
+    opacity: 1;
+    transform: translateY(0);
+    max-height: 100px;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+    max-height: 0px;
+  }
+}
+
+@-webkit-keyframes _styles-module__showHideLeft__3fbPQ {
+  0% {
+    opacity: 0;
+    transform: translateX(-15px) scaleY(0.2);
+    max-height: 0;
+  }
+  20%,
+  80% {
+    opacity: 1;
+    transform: translateY(0) scaleY(1);
+    max-height: 100px;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-15px) scaleY(0.2);
+    max-height: 0;
+  }
+}
+
+@keyframes _styles-module__showHideLeft__3fbPQ {
+  0% {
+    opacity: 0;
+    transform: translateX(-15px) scaleY(0.2);
+    max-height: 0;
+  }
+  20%,
+  80% {
+    opacity: 1;
+    transform: translateY(0) scaleY(1);
+    max-height: 100px;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-15px) scaleY(0.2);
+    max-height: 0;
+  }
+}
+
+@-webkit-keyframes _styles-module__showHideRight__Rarvj {
+  0% {
+    opacity: 0;
+    max-height: 0;
+    transform: translateX(15px) scaleY(0.2);
+  }
+  20%,
+  80% {
+    opacity: 1;
+    transform: translateY(0) scaleY(1);
+    max-height: 100px;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(15px) scaleY(0.2);
+    max-height: 0;
+  }
+}
+
+@keyframes _styles-module__showHideRight__Rarvj {
+  0% {
+    opacity: 0;
+    max-height: 0;
+    transform: translateX(15px) scaleY(0.2);
+  }
+  20%,
+  80% {
+    opacity: 1;
+    transform: translateY(0) scaleY(1);
+    max-height: 100px;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(15px) scaleY(0.2);
+    max-height: 0;
+  }
+}
+
+@-webkit-keyframes _styles-module__showHideLR__2vVca {
+  0% {
+    opacity: 0;
+    max-height: 0px;
+    transform: translateX(-15px) scaleY(0.2);
+  }
+  20%,
+  80% {
+    opacity: 1;
+    transform: translateY(0) scaleY(1);
+    max-height: 100px;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(15px) scaleY(0.2);
+    max-height: 0;
+  }
+}
+
+@keyframes _styles-module__showHideLR__2vVca {
+  0% {
+    opacity: 0;
+    max-height: 0px;
+    transform: translateX(-15px) scaleY(0.2);
+  }
+  20%,
+  80% {
+    opacity: 1;
+    transform: translateY(0) scaleY(1);
+    max-height: 100px;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(15px) scaleY(0.2);
+    max-height: 0;
+  }
+}
+
+._styles-module__notification__2V--r {
+  /* display: 'inline-block'; */
+  transition: all 1s ease;
+}
+
+._styles-module__default__133R1 {
+  -webkit-animation: _styles-module__showHideVertical__UAdhu 3s cubic-bezier(0.05, 0.78, 0.33, 0.92) forwards;
+          animation: _styles-module__showHideVertical__UAdhu 3s cubic-bezier(0.05, 0.78, 0.33, 0.92) forwards;
+}
+
+._styles-module__left__2SVjA {
+  -webkit-animation: _styles-module__showHideLeft__3fbPQ 3s cubic-bezier(0.05, 0.78, 0.33, 0.92) forwards;
+          animation: _styles-module__showHideLeft__3fbPQ 3s cubic-bezier(0.05, 0.78, 0.33, 0.92) forwards;
+}
+
+._styles-module__right__1-JL1 {
+  -webkit-animation: _styles-module__showHideRight__Rarvj 3s cubic-bezier(0.05, 0.78, 0.33, 0.92) forwards;
+          animation: _styles-module__showHideRight__Rarvj 3s cubic-bezier(0.05, 0.78, 0.33, 0.92) forwards;
+}
+
+._styles-module__left-right__1Urre {
+  -webkit-animation: _styles-module__showHideLR__2vVca 3s cubic-bezier(0.05, 0.78, 0.33, 0.92) forwards;
+          animation: _styles-module__showHideLR__2vVca 3s cubic-bezier(0.05, 0.78, 0.33, 0.92) forwards;
+}
+
+._styles-module__default-notification__13MaP {
+  background-color: white;
+  border-bottom: 1px solid black;
+  box-shadow: -1px 0 4px 0 rgba(0, 0, 0, 0.2);
+  padding: 5px 10px 5px 20px;
+  min-height: 50px;
+  max-width: 400px;
+  min-width: 200px;
+  display: flex;
+  align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}

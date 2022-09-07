@@ -1,0 +1,123 @@
+/* add css module styles here (optional) */
+
+.test {
+  margin: 2em;
+  padding: 0.5em;
+  border: 2px solid #000;
+  font-size: 2em;
+  text-align: center;
+}
+
+@keyframes showHideVertical {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+    max-height: 0px;
+  }
+  20%,
+  80% {
+    opacity: 1;
+    transform: translateY(0);
+    max-height: 100px;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+    max-height: 0px;
+  }
+}
+
+@keyframes showHideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-15px) scaleY(0.2);
+    max-height: 0;
+  }
+  20%,
+  80% {
+    opacity: 1;
+    transform: translateY(0) scaleY(1);
+    max-height: 100px;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-15px) scaleY(0.2);
+    max-height: 0;
+  }
+}
+
+@keyframes showHideRight {
+  0% {
+    opacity: 0;
+    max-height: 0;
+    transform: translateX(15px) scaleY(0.2);
+  }
+  20%,
+  80% {
+    opacity: 1;
+    transform: translateY(0) scaleY(1);
+    max-height: 100px;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(15px) scaleY(0.2);
+    max-height: 0;
+  }
+}
+
+@keyframes showHideLR {
+  0% {
+    opacity: 0;
+    max-height: 0px;
+    transform: translateX(-15px) scaleY(0.2);
+  }
+  20%,
+  80% {
+    opacity: 1;
+    transform: translateY(0) scaleY(1);
+    max-height: 100px;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(15px) scaleY(0.2);
+    max-height: 0;
+  }
+}
+
+.notification {
+  /* display: 'inline-block'; */
+  transition: all 1s ease;
+}
+
+.default {
+  animation: showHideVertical 3s cubic-bezier(0.05, 0.78, 0.33, 0.92) forwards;
+}
+
+.left {
+  animation: showHideLeft 3s cubic-bezier(0.05, 0.78, 0.33, 0.92) forwards;
+}
+
+.right {
+  animation: showHideRight 3s cubic-bezier(0.05, 0.78, 0.33, 0.92) forwards;
+}
+
+.left-right {
+  animation: showHideLR 3s cubic-bezier(0.05, 0.78, 0.33, 0.92) forwards;
+}
+
+.default-notification {
+  background-color: white;
+  border-bottom: 1px solid black;
+  box-shadow: -1px 0 4px 0 rgba(0, 0, 0, 0.2);
+  padding: 5px 10px 5px 20px;
+  min-height: 50px;
+  max-width: 400px;
+  min-width: 200px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
