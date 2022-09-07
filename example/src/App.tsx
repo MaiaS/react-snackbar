@@ -2,7 +2,7 @@
 
 import React from 'react'
 
-import { useNotificationBar, NotificationBarProvider } from 'react-snackbar'
+import { NotificationBarProvider, useNotificationBar } from 'react-snackbar'
 import 'react-snackbar/dist/index.css'
 
 const App = () => {
@@ -12,7 +12,7 @@ const App = () => {
         col='start'
         row='end'
         animationDirection={'leftRight'}
-        // render={({ notification }) => <TestNotification {...notification} />}
+        render={({ notification }) => <TestNotification {...notification} />}
       >
         <Test />
       </NotificationBarProvider>
@@ -20,34 +20,34 @@ const App = () => {
   )
 }
 
-// const TestNotification = ({ message = '', severity = 0 }) => {
-//   return (
-//     <div
-//       style={{
-//         background:
-//           severity === 0
-//             ? 'lightGreen'
-//             : severity === 1
-//             ? 'lightYellow'
-//             : 'salmon',
-//         minHeight: '20px',
-//         borderRadius: '8px',
-//         padding: '10px 20px',
-//         minWidth: '40px',
-//         maxWidth: '500px',
-//         width: 'fit-content',
-//         fontFamily: 'helvetica',
-//         fontWeight: 900,
-//         border: '1px solid green'
-//       }}
-//     >
-//       {message}
-//     </div>
-//   )
-// }
+const TestNotification = ({ message = '', severity = 0 }) => {
+  return (
+    <div
+      style={{
+        background:
+          severity === 0
+            ? 'lightGreen'
+            : severity === 1
+            ? 'lightYellow'
+            : 'salmon',
+        minHeight: '20px',
+        borderRadius: '8px',
+        padding: '10px 20px',
+        minWidth: '40px',
+        maxWidth: '500px',
+        width: 'fit-content',
+        fontFamily: 'helvetica',
+        fontWeight: 900,
+        border: '1px solid green'
+      }}
+    >
+      {message}
+    </div>
+  )
+}
 
 const Test = () => {
-  const { pushNotification, notifications } = useNotificationBar()
+  const { pushNotification } = useNotificationBar() || {}
 
   const randomMessage = () => {
     pushNotification(Math.random() * 100, Math.floor(Math.random() * 3))

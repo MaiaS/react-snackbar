@@ -2,13 +2,13 @@ import { useContext } from 'react'
 import { NotificationBarContext } from '../context'
 // import styles from './styles.module.css'
 
-export const useNotificationBar = () => {
+export const useNotificationBar = (): ContextInterface | null | never => {
   // Wrap context in custom hook for cleaner and easier usage
   const notificationContext = useContext(NotificationBarContext)
 
-  if (notificationContext === undefined) {
+  if (notificationContext === null) {
     throw new Error(
-      'Please wrap parent component with NotificationProvider and use this in child component.'
+      'Please wrap parent component with NotificationProvider and use this hook in child component.'
     )
   }
 

@@ -1,5 +1,7 @@
-import React, { useEffect, useRef, useState, createContext } from 'react'
+import v4 from 'uuid'
+import React, { useEffect, useState, createContext } from 'react'
 import { getAnimationClass } from '../util/getClassName'
+
 import styles from './styles.module.css'
 
 type Props = {
@@ -42,7 +44,6 @@ export const NotificationBarProvider: React.FC<ProviderProps> = ({
   row,
   render
 }) => {
-  const counterRef = useRef(0)
   const [newNotification, setNewNotification] = useState<NotificationObject>(
     emptyNotification()
   )
@@ -51,10 +52,9 @@ export const NotificationBarProvider: React.FC<ProviderProps> = ({
   const pushNotification = (message: string, severity?: number) => {
     setNewNotification(() => ({
       message: message,
-      id: counterRef.current,
+      id: v4.v4(),
       severity: severity
     }))
-    counterRef.current += 1
   }
 
   const returnValues = { pushNotification, notifications }

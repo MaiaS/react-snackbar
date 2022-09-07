@@ -10,7 +10,7 @@ declare module '*.css' {
 type AnimationString = 'left' | 'right' | 'default' | 'leftRight'
 
 interface NotificationObject {
-  id: number | null
+  id: string | null
   message: string | null
   severity?: number | null
 }
