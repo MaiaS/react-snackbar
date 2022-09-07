@@ -1,13 +1,13 @@
 # react-snackbar
 
-> Easy to use plug and play light snackbar and notification system for react projects
+> Easy to use, tiny, plug and play light snackbar and notification system for react projects
 
 [![NPM](https://img.shields.io/npm/v/react-snackbar.svg)](https://www.npmjs.com/package/react-snackbar) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
 ```bash
-npm install --save react-snackbar
+npm install --save lumber-react-snackbar
 ```
 
 ## Quickstart
@@ -34,6 +34,8 @@ const App = () => {
 }
 ...
 -----
+
+
 
 const Components = () => {
   const { pushNotification } = useNotificationBar()
@@ -74,6 +76,22 @@ The `NotificationBarProvider` accepts a `col` and `row`. `col` controls the `ali
 ## Types of Animations
 
 Out of the box, there are a few simple animations included. These are `left`, `right`, `default`, `leftRight`. If nothing is passed to the `animationDirection`, it will default to `default`
+
+left:
+![left](https://user-images.githubusercontent.com/90791391/188985641-03b8acef-9a65-4f06-aa5c-64b215ca4f28.gif)
+
+
+right:
+![right](https://user-images.githubusercontent.com/90791391/188985621-4f6f6586-ddf9-466e-bf6c-70af197a8cac.gif)
+
+
+leftRight:
+![leftRight](https://user-images.githubusercontent.com/90791391/188985611-b450b4c3-a004-41da-9f77-2738a9bb8775.gif)
+
+
+default:
+![default](https://user-images.githubusercontent.com/90791391/188985574-5827a6f8-fb2c-43a7-af0c-e9e43832a90c.gif)
+
 
 ```jsx
 <NotificationBarProvider animationDirection='left'>
