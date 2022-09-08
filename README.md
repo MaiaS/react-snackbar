@@ -155,3 +155,7 @@ Beware of removing animation alltogether as this will affect notification remova
 ## License
 
 MIT © [MaiaS](https://github.com/MaiaS)
+
+### TO DO:
+ [ ] - Check performance and rerenders
+ [ ] - Fix auto typing/autofill
