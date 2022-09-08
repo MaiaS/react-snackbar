@@ -2,7 +2,7 @@
 
 > Easy to use, tiny, plug and play light snackbar and notification system for react projects
 
-[![NPM](https://img.shields.io/npm/v/react-snackbar.svg)](https://www.npmjs.com/package/lumber-react-snackbar) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/lumber-react-snackbar.svg)](https://www.npmjs.com/package/lumber-react-snackbar) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
