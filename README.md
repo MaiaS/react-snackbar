@@ -1,4 +1,4 @@
-# react-snackbar
+# lumber-react-snackbar
 
 > Easy to use, tiny, plug and play light snackbar and notification system for react projects
 
