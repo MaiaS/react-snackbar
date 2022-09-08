@@ -42,7 +42,7 @@ const Components = () => {
 
   return (<div>
   {/* Pass new notifications to provider */}
-  <button onClick={() => pushNotification("message", 1)}> This is a test!
+  <button onClick={() => pushNotification("message", 1)}> This is a test.
   </div>)
 }
 ```
