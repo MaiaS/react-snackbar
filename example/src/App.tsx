@@ -2,8 +2,11 @@
 
 import React from 'react'
 
-import { NotificationBarProvider, useNotificationBar } from 'react-snackbar'
-import 'react-snackbar/dist/index.css'
+import {
+  NotificationBarProvider,
+  useNotificationBar
+} from '@lumber_devs/react-snackbar'
+import '@lumber_devs/react-snackbar/dist/index.css'
 
 const App = () => {
   return (
@@ -11,7 +14,7 @@ const App = () => {
       <NotificationBarProvider
         col='start'
         row='end'
-        animationDirection={'leftRight'}
+        animationDirection='leftRight'
         render={({ notification }) => <TestNotification {...notification} />}
       >
         <Test />
