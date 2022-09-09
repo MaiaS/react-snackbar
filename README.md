@@ -7,7 +7,7 @@
 ## Install
 
 ```bash
-npm install --save lumber-react-snackbar
+npm install --save @lumber_devs/react-snackbar
 ```
 
 ## Quickstart
@@ -21,8 +21,8 @@ pushNotification('This is a message!', 1)
 ```jsx
 import React, { Component } from 'react'
 
-import { useNotificationBar, NotificationBarProvider } from 'react-snackbar'
-import 'react-snackbar/dist/index.css'
+import { useNotificationBar, NotificationBarProvider } from '@lumber_devs/react-snackbar'
+import '@lumber_devs/react-snackbar/dist/index.css'
 
 const App = () => {
   // Wrap App or parent component in NotificationBarProvider and set positioning.
@@ -158,5 +158,5 @@ MIT © [MaiaS](https://github.com/MaiaS)
 
 ### TO DO:
 
- - Check performance and rerenders
- - Fix auto typing/autofill
+- Check performance and rerenders
+- Fix auto typing/autofill
